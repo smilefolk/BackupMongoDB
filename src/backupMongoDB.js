@@ -1,6 +1,7 @@
 var cmd = require('node-command-line'),
     Promise = require('bluebird');
 var CronJob = require('cron').CronJob;
+var config = require('config');
 var moment = require('moment-timezone');
 moment.tz('Asia/Bangkok').format();
 const commandLines = config.get('commandLines')
