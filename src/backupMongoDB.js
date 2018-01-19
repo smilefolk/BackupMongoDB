@@ -19,6 +19,6 @@ var job = new CronJob({
 job.start();
 
 function runSingleCommandWithoutWait(commandLine) {
-    cmd.run(commandLine);
+    cmd.run(commandLine + `${moment().format('YYYYMMDD')}`);
     console.log('Executed your command :)');
 }
