@@ -2,7 +2,8 @@
   "commandLines": [
     {
       "cmd":
-        "mongodump --host 45.32.108.208 --port 27017 --db ittp2 --out /backup/mongodb/"
+        "dx d0163f8db114 mongodump --host 45.32.108.208 --port 27017 --db ittp2 --out /backup/mongodb/",
+      "copy": "docker cp d0163f8db114:/backup/mongodb/"
     }
   ]
 }
