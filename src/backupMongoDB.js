@@ -6,7 +6,7 @@ var moment = require('moment-timezone')
 moment.tz('Asia/Bangkok').format()
 const commandLines = config.get('commandLines')
 var job = new CronJob({
-  cronTime: '0 45 12 * * *',
+  cronTime: '0 52 12 * * *',
   onTick: function() {
     console.log('running')
     commandLines.forEach(commandLine => {
@@ -21,10 +21,10 @@ job.start()
 
 function runSingleCommandWithoutWait(commandLine) {
   cmd.run(commandLine + `${moment().format('YYYYMMDD')}`)
-  console.log('Executed your command :)')
+  console.log('Executed your command1 :)')
 }
 
 function runCopyFileCommandWithoutWait(commandLine) {
-  cmd.run(commandLine + `${moment().format('YYYYMMDD')} /backup/mongodb/`)
-  console.log('Executed your command :)')
+  cmd.run(commandLine + `${moment().format('YYYYMMDD')} /root/backup/mongodb/`)
+  console.log('Executed your command2 :)')
 }
