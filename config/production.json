@@ -1,7 +1,8 @@
 {
-    "commandLines": [
-        {
-            "cmd": "mongodump --host beta.maxmuaythai.com --port 27017 --username mmt --password 'maxworldchampion2016' --db max_api_phase2 --out /backup/mongodb/"
-        }
-    ]
+  "commandLines": [
+    {
+      "cmd":
+        "mongodump --host 45.32.108.208 --port 27017 --db ittp2 --out /backup/mongodb/"
+    }
+  ]
 }
